@@ -1,0 +1,55 @@
+.brand {
+  width: 100%;
+  height: 10vh;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.brand a img {
+  width: 8rem;
+}
+
+/* --------MAX WIDTH 1080PX -------- */
+
+@media screen and (max-width: 1080px) {
+  .brand a img {
+    width: 6rem;
+  }
+}
+
+/* --------MAX WIDTH 991PX -------- */
+
+@media screen and (max-width: 991px) {
+  .brand {
+    gap: 3rem;
+    height: auto;
+  }
+  .brand a img {
+    width: 5rem;
+  }
+}
+
+/* --------MAX WIDTH 768PX -------- */
+
+@media screen and (max-width: 768px) {
+  .brand {
+    gap: 2rem;
+    height: auto;
+  }
+  .brand a img {
+    width: 4rem;
+  }
+}
+
+/* --------MAX WIDTH 580PX -------- */
+
+@media screen and (max-width: 580px) {
+  .brand {
+    gap: 1rem;
+  }
+  .brand a img {
+    width: 3rem;
+  }
+}

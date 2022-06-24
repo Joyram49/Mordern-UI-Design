@@ -1,0 +1,108 @@
+.possibility {
+  width: 70%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: 6rem auto;
+}
+.possibility_image {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.possibility_image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.possibility_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.possibility_content p {
+  color: var(--color-text);
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.possibility_content h1 {
+  font-size: 44px;
+}
+.possibility_content a {
+  color: var(--color-subtext);
+  font-weight: 500;
+}
+
+/* --------MAX WIDTH 1440PX -------- */
+
+@media screen and (max-width: 1440px) {
+  .possibility {
+    width: 100%;
+    padding: 4rem 6rem;
+  }
+}
+
+/* --------MAX WIDTH 1080PX -------- */
+
+@media screen and (max-width: 1080px) {
+  .possibility {
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    margin: 0rem auto;
+  }
+  .possibility_content h1 {
+    font-size: 34px;
+  }
+}
+
+/* --------MAX WIDTH 991PX -------- */
+
+@media screen and (max-width: 991px) {
+  .possibility {
+    padding: 3rem;
+    grid-template-columns: 3fr 2fr;
+    gap: 1rem;
+  }
+  .possibility_image {
+    width: 100%;
+  }
+  .possibility_image img {
+    height: auto;
+  }
+  .possibility_content p,
+  .possibility_content a {
+    font-size: 14px;
+  }
+  .possibility_content h1 {
+    font-size: 33px;
+  }
+}
+
+/* --------MAX WIDTH 768PX -------- */
+
+@media screen and (max-width: 768px) {
+  .possibility {
+    padding: 2rem;
+  }
+  .possibility_content h1 {
+    font-size: 24px;
+  }
+  .possibility_content a {
+    font-size: 12px;
+  }
+}
+
+/* --------MAX WIDTH 580PX -------- */
+
+@media screen and (max-width: 580px) {
+  .possibility {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

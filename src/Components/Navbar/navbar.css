@@ -1,0 +1,215 @@
+.navbar {
+  width: 100%;
+  height: 10vh;
+  padding: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 1.8fr 5.2fr 3fr;
+}
+.navbar_logo {
+  margin-top: -3.3rem;
+  margin-left: -2.5rem;
+}
+.navbar_logo img {
+  width: 8rem;
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  gap: 3.5rem;
+}
+.nav_item a {
+  color: #eeffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.nav_item a:hover {
+  color: #ff4820;
+}
+
+.logIn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logIn_item a {
+  color: #eeffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: var(--transition);
+  margin-right: 4rem;
+}
+.logIn_item a:hover {
+  color: #ff4820;
+}
+
+.logIn_item_button {
+  border: 1px solid #ff4820;
+  width: 7rem;
+  height: 3rem;
+  margin-top: -0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  transition: var(--transition);
+}
+
+.logIn_item_button a {
+  color: #ff4820;
+  font-size: 18px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.logIn_item_button:hover {
+  background-color: #ff4820;
+}
+
+.logIn_item_button:hover a {
+  color: white;
+}
+
+.hamburger_menu {
+  display: none;
+  visibility: hidden;
+}
+.mobile_logIn_sm {
+  display: none;
+}
+
+/* --------MAX WIDTH 1080PX -------- */
+
+@media screen and (max-width: 1080px) {
+  .navbar {
+    padding: 4rem;
+    grid-template-columns: 1.5fr 7fr 3fr;
+  }
+  .navbar_logo {
+    margin-top: -2.8rem;
+  }
+  .navbar_logo img {
+    width: 7rem;
+  }
+  .nav_links {
+    gap: 3rem;
+  }
+  .nav_item a {
+    font-size: 16px;
+  }
+  .logIn_item a {
+    font-size: 16px;
+    margin-right: 0rem;
+  }
+  .logIn_item_button {
+    width: 6rem;
+    height: 2.7rem;
+    margin-left: 2rem;
+  }
+  .logIn_item_button a {
+    font-size: 16px;
+  }
+}
+
+/* --------MAX WIDTH 991PX -------- */
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding: 3rem;
+    grid-template-columns: 2fr 3fr 2fr;
+    position: relative;
+  }
+  .navbar_logo {
+    margin-top: -2.3rem;
+    z-index: 100;
+  }
+  .navbar_logo img {
+    width: 6rem;
+  }
+  .nav_links {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+    z-index: 10;
+  }
+  .hamburger_menu a {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .mobile_nav {
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--color-footer);
+    opacity: 0.95;
+    transition: all 1s ease-in;
+  }
+  .mobile_nav_links li {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .mobile_nav_links li a {
+    font-size: 18px;
+  }
+  .mobile_logIn {
+    margin-right: 3rem;
+    transition: var(--transition);
+  }
+}
+
+/* --------MAX WIDTH 768PX -------- */
+
+@media screen and (max-width: 768px) {
+  .mobile_nav {
+    width: 100%;
+  }
+  .logIn {
+    display: none;
+  }
+  .mobile_logIn_sm {
+    display: block;
+  }
+
+  .mobile_logIn_sm .logIn_item {
+    margin: 2rem 3rem 3rem;
+  }
+  .mobile_logIn_sm .logIn_item a {
+    font-size: 18px;
+    margin-right: 0rem;
+  }
+
+  .mobile_logIn_sm .logIn_item_button a {
+    font-size: 18px;
+  }
+}
+
+/* --------MAX WIDTH 580PX -------- */
+
+@media screen and (max-width: 580px) {
+  .navbar {
+    height: 8vh;
+  }
+  .hamburger_menu {
+    top: 1.5rem;
+    right: 1rem;
+  }
+  .navbar_logo {
+    margin-top: -3.3rem;
+    margin-left: -4rem;
+  }
+}
